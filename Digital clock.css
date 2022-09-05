@@ -1,0 +1,112 @@
+body{
+    background-color: #90B77D;
+
+    background-size: 100% 700px;
+}
+#clock{
+    margin-top: 90px;
+    width: 300px;
+    height: 300px;  
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border: groove rgb(255, 255, 255);
+    /* margin-left: 40%; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+}
+#clock:hover{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+    border-radius: 100%;
+    border: groove rgb(183, 174, 174)5px;
+
+}
+#Time{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+    color:#FF4A4A;
+    /* text-shadow: 0px 0px 5px rgb(0, 0, 0); */
+}
+#date{
+    text-align: center;
+   margin-top: -10px;
+    font-size: 30px;
+    color:#FF9551;
+    /* text-shadow: 0px 0px 5px rgb(0, 0, 0); */
+}
+#day{
+    text-align: center;
+    margin-top: -10px;
+    font-size: 30px;
+    color: rgb(135, 118, 247);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    
+
+}
+/* #Heading {
+    color: lime;
+    text-shadow: 0px 0px 10px black;
+    font-size: 60px;
+} */
+
+@media (max-width:350px ) {
+    body{
+        background-color: #66fcf1 ;
+    }
+    #clock{
+        margin-top: 90px;
+        width: 200px;
+        height: 200px;
+        background-color: #1f2833;
+        box-shadow: 0px 0px 5px black;
+        border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border: groove whitesmoke;
+        /* margin-left: 40%; */
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+    }
+    #clock:hover{
+        width: 200px;
+        height: 200px;
+        background-color: rgba(24, 215, 171, 0.484);
+        box-shadow: 0px 0px 5px rgb(255, 255, 255);
+        border-radius: 100%;
+        border: groove rgb(183, 174, 174)5px;
+    
+    }
+    #Time{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+        color:#66fcf1;
+        text-shadow: 0px 0px 5px black;
+    }
+    #date{
+        text-align: center;
+        margin-top: -10px;
+        font-size: 25px;
+        color: #fdfeff;
+        text-shadow: 0px 0px 5px black;
+    }
+    #day{
+        text-align: center;
+        margin-top: -10px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        text-shadow: 0px 0px 5px rgb(255, 255, 255);
+        
+    
+    }
+}

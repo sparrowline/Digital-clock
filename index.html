@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <link rel="stylesheet" href="./Digital clock.css">
+</head>
+<div id="clock">
+<body onload="CurrentTime()">
+   
+    <h1 id="Time"></h1>
+    <h1 id="date"></h1>
+    <h1 id="day"></h1>
+    <script>
+        function CurrentTime()
+        {
+            let date=new Date();
+            let hh=date.getHours();
+            let mm=date.getMinutes();
+            let ss=date.getSeconds();
+            am_pm="AM"
+            if(hh>=12)
+            {
+                hh-=12
+                am_pm="PM"
+            }
+        if(hh==0)
+        {
+            hh=12;
+        }
+        let time=hh+":"+mm+":"+ss+" "+am_pm;
+        let yy=date.getFullYear();
+        let mo=date.getMonth()+1;
+        let dd=date.getDate();
+        let date1=dd+"-"+mo+"-"+yy+" ";
+        document.getElementById("Time").innerHTML=time;
+        document.getElementById("date").innerHTML=date1;
+        let t=setTimeout(function(){CurrentTime()},1000)
+        let day;
+        switch(new Date().getDay())
+        {
+            case 0: day="Sunday";
+            break;
+            case 1: day="Monday";
+            break;
+            case 2: day="Tusday";
+            break;
+            case 3: day="Wednesday";
+            break;
+            case 4: day="Thusrday";
+            break;
+            case 5: day="Friday";
+            break;
+            case 6: day="Saturday";
+
+        }
+        document.getElementById('day').innerHTML=day;
+    }
+    </script>
+    
+</body>
+</div>
+</html>
